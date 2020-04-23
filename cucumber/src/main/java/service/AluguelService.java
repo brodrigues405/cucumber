@@ -14,11 +14,9 @@ public class AluguelService {
 		
 		
 		Calendar c = Calendar.getInstance();
-		c.add(Calendar.DAY_OF_MONTH, 1);
+		c.add(Calendar.DAY_OF_MONTH, 1);		
 		
-		
-		notaAluguel.setDataEntrega(c.getTime());
-		
+		notaAluguel.setDataEntrega(c.getTime());		
 		filme.setEstoque(filme.getEstoque() - 1);
 		
 		return notaAluguel;
